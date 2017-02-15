@@ -13,6 +13,12 @@
 		18BA40211E547FC600CB03D1 /* UIView+UIAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40201E547FC600CB03D1 /* UIView+UIAdditions.swift */; };
 		18BA40231E54813300CB03D1 /* UIView+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40221E54813300CB03D1 /* UIView+Events.swift */; };
 		18BA40251E54815F00CB03D1 /* XYViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40241E54815F00CB03D1 /* XYViewProtocol.swift */; };
+		18BA40271E548B9400CB03D1 /* FirstViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40261E548B9400CB03D1 /* FirstViewManager.swift */; };
+		18BA40291E548DB900CB03D1 /* XYViewManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40281E548DB900CB03D1 /* XYViewManagerProtocol.swift */; };
+		18BA402B1E54A17000CB03D1 /* XYViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA402A1E54A17000CB03D1 /* XYViewModelProtocol.swift */; };
+		18BA402D1E54A4DD00CB03D1 /* NSObject+XYProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA402C1E54A4DD00CB03D1 /* NSObject+XYProperties.swift */; };
+		18BA402F1E54AED300CB03D1 /* XYMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA402E1E54AED300CB03D1 /* XYMediator.swift */; };
+		18BA40311E54B19400CB03D1 /* FirsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40301E54B19400CB03D1 /* FirsViewModel.swift */; };
 		18EAD2B71E5458B80039AED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EAD2B61E5458B80039AED2 /* Assets.xcassets */; };
 		18EAD2E81E5459970039AED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAD2E11E5459970039AED2 /* AppDelegate.swift */; };
 		18EAD2EA1E545AD90039AED2 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAD2E91E545AD90039AED2 /* DynamicViewController.swift */; };
@@ -33,6 +39,12 @@
 		18BA40201E547FC600CB03D1 /* UIView+UIAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+UIAdditions.swift"; sourceTree = "<group>"; };
 		18BA40221E54813300CB03D1 /* UIView+Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Events.swift"; sourceTree = "<group>"; };
 		18BA40241E54815F00CB03D1 /* XYViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYViewProtocol.swift; sourceTree = "<group>"; };
+		18BA40261E548B9400CB03D1 /* FirstViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewManager.swift; sourceTree = "<group>"; };
+		18BA40281E548DB900CB03D1 /* XYViewManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYViewManagerProtocol.swift; sourceTree = "<group>"; };
+		18BA402A1E54A17000CB03D1 /* XYViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYViewModelProtocol.swift; sourceTree = "<group>"; };
+		18BA402C1E54A4DD00CB03D1 /* NSObject+XYProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+XYProperties.swift"; sourceTree = "<group>"; };
+		18BA402E1E54AED300CB03D1 /* XYMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYMediator.swift; sourceTree = "<group>"; };
+		18BA40301E54B19400CB03D1 /* FirsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirsViewModel.swift; sourceTree = "<group>"; };
 		18EAD2AC1E5458B80039AED2 /* MVVMExaple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMExaple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EAD2B61E5458B80039AED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 		18EAD2BB1E5458B80039AED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
@@ -206,6 +218,7 @@
 		18EAD2CC1E5459970039AED2 /* ViewManager */ = {
 			isa = PBXGroup;
 			children = (
+				18BA40261E548B9400CB03D1 /* FirstViewManager.swift */,
 			);
 			path = ViewManager;
 			sourceTree = "<group>";
@@ -213,6 +226,7 @@
 		18EAD2CD1E5459970039AED2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				18BA40301E54B19400CB03D1 /* FirsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -342,6 +356,10 @@
 			children = (
 				18BA40221E54813300CB03D1 /* UIView+Events.swift */,
 				18BA40241E54815F00CB03D1 /* XYViewProtocol.swift */,
+				18BA40281E548DB900CB03D1 /* XYViewManagerProtocol.swift */,
+				18BA402A1E54A17000CB03D1 /* XYViewModelProtocol.swift */,
+				18BA402C1E54A4DD00CB03D1 /* NSObject+XYProperties.swift */,
+				18BA402E1E54AED300CB03D1 /* XYMediator.swift */,
 			);
 			path = Reuse;
 			sourceTree = "<group>";
@@ -427,13 +445,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BA40311E54B19400CB03D1 /* FirsViewModel.swift in Sources */,
+				18BA40291E548DB900CB03D1 /* XYViewManagerProtocol.swift in Sources */,
 				18EAD2EA1E545AD90039AED2 /* DynamicViewController.swift in Sources */,
+				18BA40271E548B9400CB03D1 /* FirstViewManager.swift in Sources */,
+				18BA402B1E54A17000CB03D1 /* XYViewModelProtocol.swift in Sources */,
 				18BA40251E54815F00CB03D1 /* XYViewProtocol.swift in Sources */,
 				18BA40171E54784D00CB03D1 /* FirstView.swift in Sources */,
 				18EAD2EE1E545B0C0039AED2 /* MeViewController.swift in Sources */,
 				18EAD2F21E545B7E0039AED2 /* MainTabBarController.swift in Sources */,
 				18BA401D1E547F1D00CB03D1 /* UIImage+XYExtension.m in Sources */,
 				18EAD2F71E545E680039AED2 /* MyConstant.swift in Sources */,
+				18BA402D1E54A4DD00CB03D1 /* NSObject+XYProperties.swift in Sources */,
+				18BA402F1E54AED300CB03D1 /* XYMediator.swift in Sources */,
 				18EAD2E81E5459970039AED2 /* AppDelegate.swift in Sources */,
 				18BA40231E54813300CB03D1 /* UIView+Events.swift in Sources */,
 				18BA40211E547FC600CB03D1 /* UIView+UIAdditions.swift in Sources */,

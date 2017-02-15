@@ -9,13 +9,13 @@
 import UIKit
 
 // MARK: - 制定view事件传递的协议
-protocol XYViewProtocol: NSObjectProtocol {
+@objc protocol XYViewProtocol: NSObjectProtocol {
     
     /*
      将view的事件通过代理传递出去
      view  view自己
      events  所触发事件的一些描述信息
      */
-    func xy_view(_ view: UIView, events: [Dictionary<String, Any>])
+    @objc optional func xy_view(_ view: UIView, events: [String: AnyObject])
     
 }

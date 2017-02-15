@@ -18,12 +18,32 @@ class HomePageViewController: UIViewController {
         return firstView as! FirstView
     }()
     
+    lazy var viewModel : FirsViewModel = {
+        return FirsViewModel()
+    }()
+    
+    lazy var viewManager: FirstViewManager = {
+        let vm = FirstViewManager()
+        return vm
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        firstView.backgroundColor = UIColor.white
+        // 设置firstView的事件处理者代理为viewManager
+        self.firstView.xy_viewManager(viewManger: viewManager)
+        
+        // 设置firstView的时间处理者闭包 闭包方式
+        let block = self.viewManager.xy_viewManagerWithViewEventBlockOfInfos(["1": "22" as AnyObject])
+        self.firstView.eventBlockContainer?.viewEventsBlock = block
+        
+        // 让viewModel和viewManager之间通过代理进行交互
+        viewModel.viewModelDelegate = viewManager as? XYViewModelProtocol
+        viewManager.viewMangerDelegate = viewModel as? XYViewManagerProtocol
+        
+        /// viewModel和viewManager之间通过block方式交互
+        self.viewManager.propertyBlockContainer?.viewModelInfosBlock = self.viewModel.xy_viewModelWithViewMangerBlockOfInfos(["info": "viewManager" as AnyObject])
+        
     }
-
-
 
 }

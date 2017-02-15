@@ -12,15 +12,15 @@ extension UIView {
     
     typealias ViewEventsBlock = () -> Void
     
-    /// 关联属性的可以
+    /// 关联属性的key
     private struct RunTimeKey {
         
         static let viewDelegateKey = UnsafeRawPointer.init(bitPattern: "viewDelegateKey".hashValue)
-        static let viewEventsBlock = UnsafeRawPointer.init(bitPattern: "viewEventsBlock".hashValue)
+        static let viewEventsBlockKey = UnsafeRawPointer.init(bitPattern: "viewEventsBlockKey".hashValue)
     }
     
     /// 定义一个类属性作为闭包容器
-    private class BlockContainer {
+    class XYEventsBlockContainer {
         var viewEventsBlock : ViewEventsBlock?
         
     }
@@ -37,16 +37,16 @@ extension UIView {
     }
     
     /// 传递view事件的闭包
-    private var viewEventsBlock: BlockContainer? {
+    var eventBlockContainer: XYEventsBlockContainer? {
         get {
-            if let viewEventsBlock = objc_getAssociatedObject(self, RunTimeKey.viewEventsBlock) as? BlockContainer {
+            if let viewEventsBlock = objc_getAssociatedObject(self, RunTimeKey.viewEventsBlockKey) as? XYEventsBlockContainer {
                 return viewEventsBlock
             }
             return nil
         }
         
         set {
-            objc_setAssociatedObject(self, RunTimeKey.viewEventsBlock, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, RunTimeKey.viewEventsBlockKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
     }
     

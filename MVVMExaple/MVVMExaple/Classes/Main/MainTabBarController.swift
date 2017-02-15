@@ -30,13 +30,15 @@ class MainTabBarController: UITabBarController {
         addChildViewController(HomePageViewController(), "moment_tabbar_select", "动态")
         addChildViewController(HomePageViewController(), "chat_tabbar_select", "消息")
         addChildViewController(HomePageViewController(), "mine_tabbar_select", "我的")
+        
     }
 
     /// 添加子控件
     private func addChildViewController(_ childController: UIViewController, _ imageName: String, _ title: String) {
+        childController.view.backgroundColor = UIColor.white
+        childController.title = title
         let nav = MainNavigationController(rootViewController: childController)
         nav.tabBarItem.image = UIImage(named: imageName)?.xy_originalMode()
-        nav.tabBarItem.title = title
         addChildViewController(nav)
     }
     

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BA40171E54784D00CB03D1 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40161E54784D00CB03D1 /* FirstView.swift */; };
+		18BA40191E5479BF00CB03D1 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BA40181E5479BF00CB03D1 /* FirstView.xib */; };
+		18BA401D1E547F1D00CB03D1 /* UIImage+XYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA401C1E547F1D00CB03D1 /* UIImage+XYExtension.m */; };
+		18BA40211E547FC600CB03D1 /* UIView+UIAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40201E547FC600CB03D1 /* UIView+UIAdditions.swift */; };
+		18BA40231E54813300CB03D1 /* UIView+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40221E54813300CB03D1 /* UIView+Events.swift */; };
+		18BA40251E54815F00CB03D1 /* XYViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40241E54815F00CB03D1 /* XYViewProtocol.swift */; };
 		18EAD2B71E5458B80039AED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EAD2B61E5458B80039AED2 /* Assets.xcassets */; };
 		18EAD2E81E5459970039AED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAD2E11E5459970039AED2 /* AppDelegate.swift */; };
 		18EAD2EA1E545AD90039AED2 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAD2E91E545AD90039AED2 /* DynamicViewController.swift */; };
@@ -16,10 +22,17 @@
 		18EAD2F21E545B7E0039AED2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAD2F11E545B7E0039AED2 /* MainTabBarController.swift */; };
 		18EAD2F41E545B9E0039AED2 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAD2F31E545B9E0039AED2 /* MainNavigationController.swift */; };
 		18EAD2F71E545E680039AED2 /* MyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAD2F61E545E680039AED2 /* MyConstant.swift */; };
-		18EAD2FD1E546F020039AED2 /* UIImage+XYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAD2FC1E546F020039AED2 /* UIImage+XYExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18BA40161E54784D00CB03D1 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		18BA40181E5479BF00CB03D1 /* FirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
+		18BA401B1E547F1D00CB03D1 /* UIImage+XYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XYExtension.h"; sourceTree = "<group>"; };
+		18BA401C1E547F1D00CB03D1 /* UIImage+XYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XYExtension.m"; sourceTree = "<group>"; };
+		18BA401E1E547F2A00CB03D1 /* MVVMExaple-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MVVMExaple-Bridging-Header.h"; path = "Category/MVVMExaple-Bridging-Header.h"; sourceTree = "<group>"; };
+		18BA40201E547FC600CB03D1 /* UIView+UIAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+UIAdditions.swift"; sourceTree = "<group>"; };
+		18BA40221E54813300CB03D1 /* UIView+Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Events.swift"; sourceTree = "<group>"; };
+		18BA40241E54815F00CB03D1 /* XYViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYViewProtocol.swift; sourceTree = "<group>"; };
 		18EAD2AC1E5458B80039AED2 /* MVVMExaple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMExaple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EAD2B61E5458B80039AED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 		18EAD2BB1E5458B80039AED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
@@ -31,9 +44,6 @@
 		18EAD2F11E545B7E0039AED2 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		18EAD2F31E545B9E0039AED2 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		18EAD2F61E545E680039AED2 /* MyConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyConstant.swift; sourceTree = "<group>"; };
-		18EAD2FA1E546F020039AED2 /* MVVMExaple-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVVMExaple-Bridging-Header.h"; sourceTree = "<group>"; };
-		18EAD2FB1E546F020039AED2 /* UIImage+XYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XYExtension.h"; sourceTree = "<group>"; };
-		18EAD2FC1E546F020039AED2 /* UIImage+XYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XYExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18BA401A1E547F1D00CB03D1 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				18BA401B1E547F1D00CB03D1 /* UIImage+XYExtension.h */,
+				18BA401C1E547F1D00CB03D1 /* UIImage+XYExtension.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		18BA401F1E547F7F00CB03D1 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				18BA40201E547FC600CB03D1 /* UIView+UIAdditions.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		18EAD2A31E5458B80039AED2 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +159,7 @@
 		18EAD2C71E5459970039AED2 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				18BA401E1E547F2A00CB03D1 /* MVVMExaple-Bridging-Header.h */,
 				18EAD2F51E545E370039AED2 /* Constant */,
 				18EAD2C81E5459970039AED2 /* Category */,
 			);
@@ -141,9 +169,8 @@
 		18EAD2C81E5459970039AED2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				18EAD2FB1E546F020039AED2 /* UIImage+XYExtension.h */,
-				18EAD2FC1E546F020039AED2 /* UIImage+XYExtension.m */,
-				18EAD2FA1E546F020039AED2 /* MVVMExaple-Bridging-Header.h */,
+				18BA401F1E547F7F00CB03D1 /* UIView */,
+				18BA401A1E547F1D00CB03D1 /* UIImage */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -169,7 +196,9 @@
 		18EAD2CB1E5459970039AED2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18BA40181E5479BF00CB03D1 /* FirstView.xib */,
 				18EAD2EB1E545AFA0039AED2 /* HomePageViewController.swift */,
+				18BA40161E54784D00CB03D1 /* FirstView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +340,8 @@
 		18EAD2E41E5459970039AED2 /* Reuse */ = {
 			isa = PBXGroup;
 			children = (
+				18BA40221E54813300CB03D1 /* UIView+Events.swift */,
+				18BA40241E54815F00CB03D1 /* XYViewProtocol.swift */,
 			);
 			path = Reuse;
 			sourceTree = "<group>";
@@ -385,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18EAD2B71E5458B80039AED2 /* Assets.xcassets in Resources */,
+				18BA40191E5479BF00CB03D1 /* FirstView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,12 +428,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				18EAD2EA1E545AD90039AED2 /* DynamicViewController.swift in Sources */,
+				18BA40251E54815F00CB03D1 /* XYViewProtocol.swift in Sources */,
+				18BA40171E54784D00CB03D1 /* FirstView.swift in Sources */,
 				18EAD2EE1E545B0C0039AED2 /* MeViewController.swift in Sources */,
 				18EAD2F21E545B7E0039AED2 /* MainTabBarController.swift in Sources */,
+				18BA401D1E547F1D00CB03D1 /* UIImage+XYExtension.m in Sources */,
 				18EAD2F71E545E680039AED2 /* MyConstant.swift in Sources */,
 				18EAD2E81E5459970039AED2 /* AppDelegate.swift in Sources */,
+				18BA40231E54813300CB03D1 /* UIView+Events.swift in Sources */,
+				18BA40211E547FC600CB03D1 /* UIView+UIAdditions.swift in Sources */,
 				18EAD2F41E545B9E0039AED2 /* MainNavigationController.swift in Sources */,
-				18EAD2FD1E546F020039AED2 /* UIImage+XYExtension.m in Sources */,
 				18EAD2EC1E545AFA0039AED2 /* HomePageViewController.swift in Sources */,
 				18EAD2F01E545B370039AED2 /* MessageViewController.swift in Sources */,
 			);
@@ -555,6 +591,7 @@
 				18EAD2C01E5458B80039AED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

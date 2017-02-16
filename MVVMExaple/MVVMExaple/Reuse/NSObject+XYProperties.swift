@@ -9,43 +9,32 @@
 import UIKit
 
 extension NSObject {
-
-    /**
-     *  ViewModelBlock
-     */
+    
+    /// ViewModelBlock
     typealias ViewModelBlock = () -> Void
     
-    /**
-     *  ViewMangerInfosBlock
-     */
+    /// ViewMangerInfosBlock
     typealias ViewMangerInfosBlock = () -> Void
     
-    /**
-     *  ViewModelInfosBlock
-     */
+    /// ViewModelInfosBlock
     typealias ViewModelInfosBlock = () -> Void
     
     
     // MARK: - 定义一个类属性作为block容器
     class XYPropertyBlockContainer: NSObject, NSCopying {
    
+        /// 重写此方法，进行浅拷贝，不然给当前闭包容器类的属性赋值时会报错
         func copy(with zone: NSZone? = nil) -> Any {
             return self
         }
         
-        /**
-         *  viewModelBlock
-         */
+        /// viewModelBlock
         var viewModelBlock : ViewModelBlock?
         
-        /**
-         *  ViewMangerInfosBlock
-         */
+        /// ViewMangerInfosBlock
         var viewMangerInfosBlock : ViewMangerInfosBlock?
-        /**
-         *  ViewModelInfosBlock
-         */
-        
+
+        /// ViewModelInfosBlock
         var viewModelInfosBlock : ViewModelInfosBlock?
         
 
@@ -54,7 +43,7 @@ extension NSObject {
     // MARK: - 关联属性的可以
     private struct RunTimeKey {
         static let blockContainerKey = UnsafeRawPointer(bitPattern: "blockContainerKey".hashValue)
-//        static var blockContainerKey = "blockContainerKey"
+
         static let viewMangerDelegateKey = UnsafeRawPointer(bitPattern: "viewMangerDelegate".hashValue)
         static let viewModelDelegateKey = UnsafeRawPointer(bitPattern: "viewModelDelegateKey".hashValue)
         static let xy_viewMangerInfosKey = UnsafeRawPointer(bitPattern: "xy_viewMangerInfosKey".hashValue)
@@ -78,9 +67,7 @@ extension NSObject {
     }
     
     
-    /**
-     *  viewMangerDelegate
-     */
+    /// viewMangerDelegate
     var viewMangerDelegate: XYViewManagerProtocol? {
     
         set {
@@ -97,9 +84,7 @@ extension NSObject {
     
 
     
-    /**
-     *  viewModelDelegate
-     */
+    /// viewModelDelegate
     weak var viewModelDelegate: XYViewModelProtocol? {
         set {
             objc_setAssociatedObject(self, RunTimeKey.viewModelDelegateKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
@@ -114,9 +99,7 @@ extension NSObject {
     }
 
     
-    /**
-     *  mediator
-     */
+    /// mediator
     var xy_mediator : XYMediator? {
         set {
             objc_setAssociatedObject(self, RunTimeKey.xy_mediatorKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -131,9 +114,7 @@ extension NSObject {
     }
     
     
-    /**
-     *  xy_viewMangerInfos
-     */
+    /// xy_viewMangerInfos
     var xy_viewMangerInfos: [String: AnyObject]? {
         set {
             objc_setAssociatedObject(self, RunTimeKey.xy_viewMangerInfosKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -148,10 +129,7 @@ extension NSObject {
         
     }
     
-    
-    /**
-     *  xy_viewModelInfos
-     */
+    /// xy_viewModelInfos
     var xy_viewModelInfos: [String: AnyObject]? {
         set {
             objc_setAssociatedObject(self, RunTimeKey.xy_viewModelInfosKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -168,20 +146,15 @@ extension NSObject {
     
     
 
-    /**
-     *  获取一个对象的所有属性
-     */
+    /// 获取一个对象的所有属性
     class func xy_propertyList() -> [String] {
         var count: UInt32 = 0
-        //1.获取类的属性列表,返回属性列表的数组,可选项
+        // 获取类的属性列表,返回属性列表的数组,可选项
         let list = class_copyPropertyList(self, &count)
         print("属性个数:\(count)")
         for i in 0..<Int(count) {
-            //使用guard语法,一次判断每一项是否有值,只要有一项为nil,就不再执行后续的代码
-            guard let pty = list?[i],
-                let cName = property_getName(pty),
-                let name = String(utf8String: cName)
-                else {
+            
+            guard let pty = list?[i], let cName = property_getName(pty),let name = String(utf8String: cName)else {
                     //继续遍历下一个
                     continue
             }

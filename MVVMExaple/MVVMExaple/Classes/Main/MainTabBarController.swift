@@ -27,9 +27,9 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         
         addChildViewController(HomePageViewController(), "find_tabbar_selecte", "首页")
-        addChildViewController(HomePageViewController(), "moment_tabbar_select", "动态")
-        addChildViewController(HomePageViewController(), "chat_tabbar_select", "消息")
-        addChildViewController(HomePageViewController(), "mine_tabbar_select", "我的")
+        addChildViewController(DynamicViewController(), "moment_tabbar_select", "动态")
+        addChildViewController(MessageViewController(), "chat_tabbar_select", "消息")
+        addChildViewController(MessageViewController(), "mine_tabbar_select", "我的")
         
     }
 

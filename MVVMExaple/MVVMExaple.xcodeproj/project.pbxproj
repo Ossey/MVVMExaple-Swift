@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A461C71E55AEA3007A7A8E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461B31E55AEA3007A7A8E /* AFError.swift */; };
+		18A461C81E55AEA3007A7A8E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461B51E55AEA3007A7A8E /* Alamofire.swift */; };
+		18A461C91E55AEA3007A7A8E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461B61E55AEA3007A7A8E /* DispatchQueue+Alamofire.swift */; };
+		18A461CA1E55AEA3007A7A8E /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18A461B71E55AEA3007A7A8E /* Info-tvOS.plist */; };
+		18A461CB1E55AEA3007A7A8E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18A461B81E55AEA3007A7A8E /* Info.plist */; };
+		18A461CC1E55AEA3007A7A8E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461B91E55AEA3007A7A8E /* MultipartFormData.swift */; };
+		18A461CD1E55AEA3007A7A8E /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461BA1E55AEA3007A7A8E /* NetworkReachabilityManager.swift */; };
+		18A461CE1E55AEA3007A7A8E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461BB1E55AEA3007A7A8E /* Notifications.swift */; };
+		18A461CF1E55AEA3007A7A8E /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461BC1E55AEA3007A7A8E /* ParameterEncoding.swift */; };
+		18A461D01E55AEA3007A7A8E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461BD1E55AEA3007A7A8E /* Request.swift */; };
+		18A461D11E55AEA3007A7A8E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461BE1E55AEA3007A7A8E /* Response.swift */; };
+		18A461D21E55AEA3007A7A8E /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461BF1E55AEA3007A7A8E /* ResponseSerialization.swift */; };
+		18A461D31E55AEA3007A7A8E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461C01E55AEA3007A7A8E /* Result.swift */; };
+		18A461D41E55AEA3007A7A8E /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461C11E55AEA3007A7A8E /* ServerTrustPolicy.swift */; };
+		18A461D51E55AEA3007A7A8E /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461C21E55AEA3007A7A8E /* SessionDelegate.swift */; };
+		18A461D61E55AEA3007A7A8E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461C31E55AEA3007A7A8E /* SessionManager.swift */; };
+		18A461D71E55AEA3007A7A8E /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461C41E55AEA3007A7A8E /* TaskDelegate.swift */; };
+		18A461D81E55AEA3007A7A8E /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461C51E55AEA3007A7A8E /* Timeline.swift */; };
+		18A461D91E55AEA3007A7A8E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A461C61E55AEA3007A7A8E /* Validation.swift */; };
 		18BA40171E54784D00CB03D1 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA40161E54784D00CB03D1 /* FirstView.swift */; };
 		18BA40191E5479BF00CB03D1 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BA40181E5479BF00CB03D1 /* FirstView.xib */; };
 		18BA401D1E547F1D00CB03D1 /* UIImage+XYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA401C1E547F1D00CB03D1 /* UIImage+XYExtension.m */; };
@@ -31,6 +50,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18A461B31E55AEA3007A7A8E /* AFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		18A461B41E55AEA3007A7A8E /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
+		18A461B51E55AEA3007A7A8E /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		18A461B61E55AEA3007A7A8E /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		18A461B71E55AEA3007A7A8E /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		18A461B81E55AEA3007A7A8E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A461B91E55AEA3007A7A8E /* MultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		18A461BA1E55AEA3007A7A8E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		18A461BB1E55AEA3007A7A8E /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		18A461BC1E55AEA3007A7A8E /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		18A461BD1E55AEA3007A7A8E /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		18A461BE1E55AEA3007A7A8E /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		18A461BF1E55AEA3007A7A8E /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		18A461C01E55AEA3007A7A8E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		18A461C11E55AEA3007A7A8E /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		18A461C21E55AEA3007A7A8E /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		18A461C31E55AEA3007A7A8E /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		18A461C41E55AEA3007A7A8E /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		18A461C51E55AEA3007A7A8E /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		18A461C61E55AEA3007A7A8E /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		18BA40161E54784D00CB03D1 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		18BA40181E5479BF00CB03D1 /* FirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		18BA401B1E547F1D00CB03D1 /* UIImage+XYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XYExtension.h"; sourceTree = "<group>"; };
@@ -69,6 +108,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18A461B11E55AE9C007A7A8E /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				18A461B21E55AEA3007A7A8E /* Source */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		18A461B21E55AEA3007A7A8E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18A461B31E55AEA3007A7A8E /* AFError.swift */,
+				18A461B41E55AEA3007A7A8E /* Alamofire.h */,
+				18A461B51E55AEA3007A7A8E /* Alamofire.swift */,
+				18A461B61E55AEA3007A7A8E /* DispatchQueue+Alamofire.swift */,
+				18A461B71E55AEA3007A7A8E /* Info-tvOS.plist */,
+				18A461B81E55AEA3007A7A8E /* Info.plist */,
+				18A461B91E55AEA3007A7A8E /* MultipartFormData.swift */,
+				18A461BA1E55AEA3007A7A8E /* NetworkReachabilityManager.swift */,
+				18A461BB1E55AEA3007A7A8E /* Notifications.swift */,
+				18A461BC1E55AEA3007A7A8E /* ParameterEncoding.swift */,
+				18A461BD1E55AEA3007A7A8E /* Request.swift */,
+				18A461BE1E55AEA3007A7A8E /* Response.swift */,
+				18A461BF1E55AEA3007A7A8E /* ResponseSerialization.swift */,
+				18A461C01E55AEA3007A7A8E /* Result.swift */,
+				18A461C11E55AEA3007A7A8E /* ServerTrustPolicy.swift */,
+				18A461C21E55AEA3007A7A8E /* SessionDelegate.swift */,
+				18A461C31E55AEA3007A7A8E /* SessionManager.swift */,
+				18A461C41E55AEA3007A7A8E /* TaskDelegate.swift */,
+				18A461C51E55AEA3007A7A8E /* Timeline.swift */,
+				18A461C61E55AEA3007A7A8E /* Validation.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		18BA401A1E547F1D00CB03D1 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +308,7 @@
 		18EAD2CE1E5459970039AED2 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				18A461B11E55AE9C007A7A8E /* Alamofire */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -433,6 +508,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A461CB1E55AEA3007A7A8E /* Info.plist in Resources */,
+				18A461CA1E55AEA3007A7A8E /* Info-tvOS.plist in Resources */,
 				18EAD2B71E5458B80039AED2 /* Assets.xcassets in Resources */,
 				18BA40191E5479BF00CB03D1 /* FirstView.xib in Resources */,
 			);
@@ -445,25 +522,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A461D21E55AEA3007A7A8E /* ResponseSerialization.swift in Sources */,
 				18BA40311E54B19400CB03D1 /* FirsViewModel.swift in Sources */,
 				18BA40291E548DB900CB03D1 /* XYViewManagerProtocol.swift in Sources */,
 				18EAD2EA1E545AD90039AED2 /* DynamicViewController.swift in Sources */,
 				18BA40271E548B9400CB03D1 /* FirstViewManager.swift in Sources */,
 				18BA402B1E54A17000CB03D1 /* XYViewModelProtocol.swift in Sources */,
+				18A461D31E55AEA3007A7A8E /* Result.swift in Sources */,
 				18BA40251E54815F00CB03D1 /* XYViewProtocol.swift in Sources */,
+				18A461D81E55AEA3007A7A8E /* Timeline.swift in Sources */,
+				18A461C81E55AEA3007A7A8E /* Alamofire.swift in Sources */,
 				18BA40171E54784D00CB03D1 /* FirstView.swift in Sources */,
 				18EAD2EE1E545B0C0039AED2 /* MeViewController.swift in Sources */,
 				18EAD2F21E545B7E0039AED2 /* MainTabBarController.swift in Sources */,
+				18A461CD1E55AEA3007A7A8E /* NetworkReachabilityManager.swift in Sources */,
+				18A461D71E55AEA3007A7A8E /* TaskDelegate.swift in Sources */,
+				18A461CC1E55AEA3007A7A8E /* MultipartFormData.swift in Sources */,
 				18BA401D1E547F1D00CB03D1 /* UIImage+XYExtension.m in Sources */,
+				18A461D51E55AEA3007A7A8E /* SessionDelegate.swift in Sources */,
 				18EAD2F71E545E680039AED2 /* MyConstant.swift in Sources */,
 				18BA402D1E54A4DD00CB03D1 /* NSObject+XYProperties.swift in Sources */,
+				18A461CE1E55AEA3007A7A8E /* Notifications.swift in Sources */,
+				18A461D01E55AEA3007A7A8E /* Request.swift in Sources */,
+				18A461D91E55AEA3007A7A8E /* Validation.swift in Sources */,
 				18BA402F1E54AED300CB03D1 /* XYMediator.swift in Sources */,
 				18EAD2E81E5459970039AED2 /* AppDelegate.swift in Sources */,
 				18BA40231E54813300CB03D1 /* UIView+Events.swift in Sources */,
+				18A461D11E55AEA3007A7A8E /* Response.swift in Sources */,
 				18BA40211E547FC600CB03D1 /* UIView+UIAdditions.swift in Sources */,
+				18A461D41E55AEA3007A7A8E /* ServerTrustPolicy.swift in Sources */,
+				18A461CF1E55AEA3007A7A8E /* ParameterEncoding.swift in Sources */,
 				18EAD2F41E545B9E0039AED2 /* MainNavigationController.swift in Sources */,
+				18A461C91E55AEA3007A7A8E /* DispatchQueue+Alamofire.swift in Sources */,
+				18A461C71E55AEA3007A7A8E /* AFError.swift in Sources */,
 				18EAD2EC1E545AFA0039AED2 /* HomePageViewController.swift in Sources */,
 				18EAD2F01E545B370039AED2 /* MessageViewController.swift in Sources */,
+				18A461D61E55AEA3007A7A8E /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
